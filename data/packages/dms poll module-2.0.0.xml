@@ -1,0 +1,160 @@
+<project>
+  <Metadata>
+    <metadata>
+      <PackageName>Sitecore DMS Poll module</PackageName>
+      <Author>Sitecore A/S</Author>
+      <Version>2.0.0</Version>
+      <Revision />
+      <License>&lt;p&gt;&lt;strong&gt;SITECORE SHARED SOURCE LICENSE&lt;/strong&gt; &lt;br&gt;&lt;br&gt;This License governs use of the accompanying Software, and your use of the Software constitutes acceptance of this license. &lt;br&gt;&lt;br&gt;Subject to the restrictions in this license, you may use this Software for any commercial or non-commercial purpose in Sitecore solutions only. You may also distribute this Software with books or other teaching materials, or publish the Software on websites, that are intended to teach the use of the Software in relation to Sitecore. &lt;br&gt;&lt;br&gt;You may not use or distribute this Software or any derivative works in any form for uses other than with Sitecore. &lt;br&gt;&lt;br&gt;You may modify this Software and distribute the modified Software as long as it relates to Sitecore, however, you may not grant rights to the Software or derivative works that are broader than those provided by this License. For example, you may not distribute modifications of the Software under terms that would permit uses not relating to Sitecore, or under terms that purport to require the Software or derivative works to be sublicensed to others. &lt;br&gt;&lt;br&gt;You may use any information in intangible form that you remember after accessing the Software. However, this right does not grant you a license to any of Sitecore's copyrights or patents for anything you might create using such information. &lt;br&gt;&lt;br&gt;In return, we simply require that you agree: &lt;/p&gt;&lt;ol type="1"&gt;&lt;li class="normal"&gt;Not to remove any copyright or other notices from the Software. &lt;/li&gt;&lt;li class="normal"&gt;That if you distribute the Software in source or object form, you will include a verbatim copy of this license. &lt;/li&gt;&lt;li class="normal"&gt;That if you distribute derivative works of the Software in source code form you do so only under a license that includes all of the provisions of this License, and if you distribute derivative works of the Software solely in object form you do so only under a license that complies with this License. &lt;/li&gt;&lt;li class="normal"&gt;That if you have modified the Software or created derivative works, and distribute such modifications or derivative works, you will cause the modified files to carry prominent notices so that recipients know that they are not receiving the original Software. Such notices must state: (i) that you have changed the Software; and (ii) the date of any changes. &lt;/li&gt;&lt;li class="normal"&gt;THAT THE SOFTWARE COMES "AS IS", WITH NO WARRANTIES. THIS MEANS NO EXPRESS, IMPLIED OR STATUTORY WARRANTY, INCLUDING WITHOUT LIMITATION, WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE OR ANY WARRANTY OF TITLE OR NON-INFRINGEMENT. ALSO, YOU MUST PASS THIS DISCLAIMER ON WHENEVER YOU DISTRIBUTE THE SOFTWARE OR DERIVATIVE WORKS. &lt;/li&gt;&lt;li class="normal"&gt;THAT SITECORE WILL NOT BE LIABLE FOR ANY DAMAGES RELATED TO THE SOFTWARE OR THIS LICENSE, INCLUDING DIRECT, INDIRECT, SPECIAL, CONSEQUENTIAL OR INCIDENTAL DAMAGES, TO THE MAXIMUM EXTENT THE LAW PERMITS, NO MATTER WHAT LEGAL THEORY IT IS BASED ON. ALSO, YOU MUST PASS THIS LIMITATION OF LIABILITY ON WHENEVER YOU DISTRIBUTE THE SOFTWARE OR DERIVATIVE WORKS. &lt;/li&gt;&lt;li class="normal"&gt;That if you sue anyone over patents that you think may apply to the Software or anyone's use of the Software, your license to the Software ends automatically. &lt;/li&gt;&lt;li class="normal"&gt;That your rights under the License end automatically if you breach it in any way. &lt;/li&gt;&lt;li class="normal"&gt;Sitecore reserves all rights not expressly granted to you in this license.&lt;/li&gt;&lt;/ol&gt;</License>
+      <Comment />
+      <Attributes />
+      <Readme>The installation process adds a number of Templates, items and controls to your 
+Sitecore client. 
+Templates/Sitecore Modules/DMS Poll Module folder:
+•	DMSPoll – for creating Poll Items
+•	DMSPoll option – for creating Items which contain poll variants
+•	DMSPoll archive - for storing old polls
+•	Settings/DMS Poll Settings - for setting analytics cache time in minutes
+•	Branches/Create new Poll - branch for run wizard which creates new poll
+System/Modules/DMS Poll folder:
+System/Modules/DMS Poll folder:
+•	DMS Poll Settings - item for setting global analytics cache time in minutes
+
+The following web controls are installed: 
+•	Poll Info – a viewer for the Poll Items
+•	DMS Poll Wizard - a wizard for the Poll creation
+•	DMS Poll Voting Sublayout - sublayout for rendering backend pages
+
+The following analytics reports are installed: 
+•	Item Reports/Page Actions – for getting analytics about poll on current page
+•	Polls - for getting analytics about polls from all pages</Readme>
+      <Publisher>Sitecore A/S</Publisher>
+      <PostStep />
+      <PackageID />
+    </metadata>
+  </Metadata>
+  <SaveProject>True</SaveProject>
+  <Sources>
+    <xfiles>
+      <Entries>
+        <x-item>/App_Config/Include/DMSPollConfig.config</x-item>
+        <x-item>/bin/Sitecore.Modules.DMSPoll.dll</x-item>
+        <x-item>/sitecore modules/Shell/DMS Poll Module/Controls/PollInfo.aspx</x-item>
+        <x-item>/sitecore modules/Shell/DMS Poll Module/CustomStyles.css</x-item>
+        <x-item>/sitecore modules/Shell/DMS Poll Module/Poll.css</x-item>
+        <x-item>/sitecore modules/Shell/DMS Poll Module/Poll.js</x-item>
+        <x-item>/sitecore modules/Shell/DMS Poll Module/PollStarterKit.css</x-item>
+        <x-item>/sitecore modules/Shell/DMS Poll Module/Sitecore.PlaceholderManager.js</x-item>
+        <x-item>/sitecore/shell/Applications/Analytics/Reports/ItemReports/PageActions.mrt</x-item>
+        <x-item>/sitecore/shell/Applications/Analytics/Reports/Polls.mrt</x-item>
+        <x-item>/sitecore modules/Shell/DMS Poll Module/Controls/DMSPollVotingSublayout.ascx</x-item>
+        <x-item>/sitecore modules/Shell/DMS Poll Module/Controls/DMSPollWizard.xml</x-item>
+        <x-item>/sitecore modules/Shell/DMS Poll Module/img/poll_pipe_part.png</x-item>
+      </Entries>
+      <Converter>
+        <FileToEntryConverter>
+          <Root>/</Root>
+          <Transforms>
+            <InstallerConfigurationTransform>
+              <Options>
+                <BehaviourOptions>
+                  <ItemMode>Undefined</ItemMode>
+                  <ItemMergeMode>Undefined</ItemMergeMode>
+                </BehaviourOptions>
+              </Options>
+            </InstallerConfigurationTransform>
+          </Transforms>
+        </FileToEntryConverter>
+      </Converter>
+      <Include />
+      <Exclude />
+      <Name>Files</Name>
+    </xfiles>
+    <xitems>
+      <Entries>
+        <x-item>/core/sitecore/content/Applications/Content Editor/Editors/Templates/DMS Poll/{55FDB8FF-2FD8-498B-BF49-EAB3322646A1}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Dictionary/DMS PollModule/{E6D77475-C1C3-4FDA-8EBC-782341876BD8}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Dictionary/DMS PollModule/Already voted/{CB647CBD-3AE5-494E-B613-D10C55A9D197}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Dictionary/DMS PollModule/Click finish/{4435E72B-0AE8-4CC9-962D-F79BF26E9BFC}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Dictionary/DMS PollModule/Enter intro and thank you/{B3D90FF6-A9F1-4DBD-9D89-4BBDA9FB9775}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Dictionary/DMS PollModule/Enter oms poll options validator/{B3A82AC4-24DE-437F-BDB5-4C43D56FC24B}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Dictionary/DMS PollModule/Enter placeholder/{E6F48143-0844-431E-84BE-3FA1E06E21D3}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Dictionary/DMS PollModule/Enter poll options/{100656F1-19BD-4413-ACA1-D39844BC21D1}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Dictionary/DMS PollModule/Finish/{307123E7-71DD-4C65-9877-0484F7850EF4}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Dictionary/DMS PollModule/Invalid sublayout parameter/{151833BD-4EFB-4F52-A63C-06F597E36D4B}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Dictionary/DMS PollModule/PL_INTRO/{89185B12-9D2E-4F03-9863-604BC710D8C1}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Dictionary/DMS PollModule/PL_THANKYOU/{8CFF6F8B-37BE-4E30-9894-5D2CF3ADF064}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Dictionary/DMS PollModule/Poll name duplicate/{8C01C0DB-CE78-490D-9FFE-65343A513526}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Dictionary/DMS PollModule/Poll name/{10ED7B99-447E-40F2-A513-5C0DBDEAB8ED}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Dictionary/DMS PollModule/Poll Options/{82BA1241-9868-4975-966D-22324CFA16CC}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Dictionary/DMS PollModule/Select name/{C0645241-DF6F-47BA-A362-BE81EFFF491E}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Dictionary/DMS PollModule/Select options/{AC62F445-90A2-4C6E-AF17-354EAF9C4057}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Dictionary/DMS PollModule/Select placeholder/{BFA24428-5B91-4108-A941-B9EB489628E0}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Dictionary/DMS PollModule/Web service exception/{9DE18844-445B-468B-8258-414B38CE8B83}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Dictionary/DMS PollModule/Welcome to the Poll wizard/{39B5290D-9138-4806-8A18-F09C9EB482B7}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Dictionary/DMS PollModule/Wizard guide text/{32122219-5177-4F13-89A6-F52E3784171B}/invariant/0</x-item>
+        <x-item>/master/sitecore/layout/Sublayouts/Modules/DMS Poll Voting Sublayout/{B81AEFBD-EE51-45A3-AD83-ED4EED6D510C}/invariant/0</x-item>
+        <x-item>/master/sitecore/media library/Images/DMS Poll/{6850A1EB-CBD2-4764-A03E-19DDCFBDFA3B}/invariant/0</x-item>
+        <x-item>/master/sitecore/media library/Images/DMS Poll/PollLine/{FC670A4D-756A-4FE6-9F18-E7EDD6D71103}/invariant/0</x-item>
+        <x-item>/master/sitecore/media library/Images/DMS Poll/PollPipePart/{4BAE3589-2E9B-4E57-A23D-5AB406EB2CCF}/invariant/0</x-item>
+        <x-item>/master/sitecore/media library/Images/DMS Poll/PollPipeRight/{EFEB665E-24B2-4D6D-A424-3752EB331523}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/DMS Poll/{D011DCC6-6F13-48C4-A515-AB2A444671CA}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/DMS Poll/DMS Poll Settings/{DDE87207-7DDF-427C-AF3B-A4064D69753E}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Analytics/Reports SQL Queries/PageActionsEvents/{4F317034-AC72-4A2A-87FB-FBA96B07744D}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Analytics/Reports SQL Queries/PageActionsFailures/{43C67820-650F-48B0-B015-CFC4EC81D6CC}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Analytics/Reports SQL Queries/PageActionsGoals/{F38706DC-5928-4E99-BDBE-93F406583EFE}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Analytics/Reports SQL Queries/PageActionsMetrics/{71DFFE91-FEEE-4C04-A867-5D253EECEE89}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Analytics/Reports SQL Queries/PageActionsPollOptions/{663715BA-8200-4EF8-9D4B-04C9C608F97B}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Analytics/Reports SQL Queries/PageActionsPolls/{6E5205FB-FC6A-4295-BDA1-3ECFF1988A98}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Analytics/Reports SQL Queries/PollDataSource/{FAC123C0-D31E-490E-8ED9-6BD510FCFB26}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Analytics/Reports SQL Queries/PollOptionDataSource/{D2ACB8BA-70AF-4BB1-BB42-74E7E10EA083}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Analytics/Reports/Item Reports/Page Actions/{AF389EBB-0512-4D74-90DE-8D73905556A8}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Analytics/Reports/Reports/Marketing/Polls/{971B391D-D253-49C0-ADA0-B885F0AD1421}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Sitecore Modules/DMS Poll module/{5C7C22F7-34D9-4760-90C2-D24E2A952055}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Sitecore Modules/DMS Poll module/Branches/{267EA541-EF19-4C00-8379-5A0A584B421D}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Sitecore Modules/DMS Poll module/Branches/Create new OMS Poll/{10FC7047-1493-4E03-9F52-3865BBA0EE7F}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Sitecore Modules/DMS Poll module/DMS Poll archive/__Standard Values/{1D032B61-A022-4DA4-B71E-C4AF82B2D34C}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Sitecore Modules/DMS Poll module/DMS Poll archive/{DD41F44E-497F-412D-8290-7D1FD85BD5FA}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Sitecore Modules/DMS Poll module/DMS Poll option/__Standard Values/{5B51BB23-EBBD-40BA-A8EB-440B3EF73D0B}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Sitecore Modules/DMS Poll module/DMS Poll option/{69C26EB6-C818-4D85-9570-BAC54479BDE8}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Sitecore Modules/DMS Poll module/DMS Poll option/Data/{36D3E0BB-C8F6-4395-8D86-8C24C3FE1FBF}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Sitecore Modules/DMS Poll module/DMS Poll option/Data/Title/{BE5B9DDA-871C-48F9-8604-8CB62D3CBCBC}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Sitecore Modules/DMS Poll module/DMS Poll option/Index/{9E828915-2F46-4F12-A5ED-949E8B897944}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Sitecore Modules/DMS Poll module/DMS Poll option/Index/Index/{2926CE34-A03E-4DF4-AA1B-EF97D4F5346E}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Sitecore Modules/DMS Poll module/DMS Poll/__Standard Values/{769F32CE-73C0-4A3D-B827-965229ED822E}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Sitecore Modules/DMS Poll module/DMS Poll/{459759A3-54D1-4037-ABBF-4E8D98C9E7D9}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Sitecore Modules/DMS Poll module/DMS Poll/Button titles/{1838C1F2-A1F2-4BA0-8E48-93824AD08B08}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Sitecore Modules/DMS Poll module/DMS Poll/Button titles/Submit vote/{8043D5C2-7968-446C-A6A6-38C2BB795841}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Sitecore Modules/DMS Poll module/DMS Poll/Data/{45A974E9-D393-4467-BCE9-2E9F6C9730F3}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Sitecore Modules/DMS Poll module/DMS Poll/Data/Intro/{114A7498-E0BD-4F06-8EF4-4B7BD4CE7D75}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Sitecore Modules/DMS Poll module/DMS Poll/Data/Thank you/{F776F02E-E4A2-495D-BF34-9CD5035B71FC}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Sitecore Modules/DMS Poll module/DMS Poll/Settings/{CCCE76FE-FA86-40FD-B469-C69C3AB30D10}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Sitecore Modules/DMS Poll module/DMS Poll/Settings/Closed/{052EEC6A-15C5-4BAD-8062-36EDFD9DDA44}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Sitecore Modules/DMS Poll module/DMS Poll/Settings/One vote per user/{3FBD0A7A-AE78-4586-86FC-4FD9CB5AA991}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Sitecore Modules/DMS Poll module/Settings/{9BF9FD9A-D647-4814-884A-C7A4BC60A211}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Sitecore Modules/DMS Poll module/Settings/DMS Poll Settings/__Standard Values/{B0C14021-DFEE-4C49-97A1-93C0519A174F}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Sitecore Modules/DMS Poll module/Settings/DMS Poll Settings/{4CD7C0C9-DCC0-411E-B568-3BF6593BC60E}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Sitecore Modules/DMS Poll module/Settings/DMS Poll Settings/Analytics cache/{1A8ED9C4-08C5-466F-9A00-6BCC4DBCE651}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Sitecore Modules/DMS Poll module/Settings/DMS Poll Settings/Analytics cache/100-1000 votes/{0861D134-2E3C-4AC2-AE19-528DD8113949}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Sitecore Modules/DMS Poll module/Settings/DMS Poll Settings/Analytics cache/more than 1000 votes/{25AEC078-858D-409B-9D8D-571316DC1DF5}/invariant/0</x-item>
+      </Entries>
+      <SkipVersions>False</SkipVersions>
+      <Converter>
+        <ItemToEntryConverter>
+          <Transforms />
+        </ItemToEntryConverter>
+      </Converter>
+      <Include />
+      <Exclude />
+      <Name>Items</Name>
+    </xitems>
+  </Sources>
+  <Converter>
+    <TrivialConverter>
+      <Transforms />
+    </TrivialConverter>
+  </Converter>
+  <Include />
+  <Exclude />
+  <Name />
+</project>

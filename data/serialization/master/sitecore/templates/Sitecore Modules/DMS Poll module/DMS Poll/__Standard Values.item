@@ -1,0 +1,119 @@
+----item----
+version: 1
+id: {769F32CE-73C0-4A3D-B827-965229ED822E}
+database: master
+path: /sitecore/templates/Sitecore Modules/DMS Poll module/DMS Poll/__Standard Values
+parent: {459759A3-54D1-4037-ABBF-4E8D98C9E7D9}
+name: __Standard Values
+master: {00000000-0000-0000-0000-000000000000}
+template: {459759A3-54D1-4037-ABBF-4E8D98C9E7D9}
+templatekey: DMS Poll
+
+----field----
+field: {3FBD0A7A-AE78-4586-86FC-4FD9CB5AA991}
+name: One vote per user
+key: one vote per user
+content-length: 1
+
+1
+----field----
+field: {B0A67B2A-8B07-4E0B-8809-69F751709806}
+name: __Tracking
+key: __tracking
+content-length: 12
+
+<tracking />
+----field----
+field: {A0CB3965-8884-4C7A-8815-B6B2E5CED162}
+name: __Editors
+key: __editors
+content-length: 38
+
+{55FDB8FF-2FD8-498B-BF49-EAB3322646A1}
+----field----
+field: {1172F251-DAD4-4EFB-A329-0C63500E4F1E}
+name: __Masters
+key: __masters
+content-length: 77
+
+{69C26EB6-C818-4D85-9570-BAC54479BDE8}|{DD41F44E-497F-412D-8290-7D1FD85BD5FA}
+----field----
+field: {DEC8D2D5-E3CF-48B6-A653-8E69E2716641}
+name: __Security
+key: __security
+content-length: 33
+
+au|sitecore\poll|pe|+item:create|
+----version----
+language: en
+version: 1
+revision: d3ce4272-7130-415f-aef5-723c6261e388
+
+----field----
+field: {114A7498-E0BD-4F06-8EF4-4B7BD4CE7D75}
+name: Intro
+key: intro
+content-length: 37
+
+
+		<h1>Please cast your vote.</h1>
+
+----field----
+field: {F776F02E-E4A2-495D-BF34-9CD5035B71FC}
+name: Thank you
+key: thank you
+content-length: 87
+
+
+		<div>
+      <b>Your vote has been submitted</b> <br />Thank you for voting</div>
+
+----field----
+field: {8043D5C2-7968-446C-A6A6-38C2BB795841}
+name: Submit vote
+key: submit vote
+content-length: 11
+
+Submit vote
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20080827T121500
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+d3ce4272-7130-415f-aef5-723c6261e388
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20090812T172014:633856944149682475
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

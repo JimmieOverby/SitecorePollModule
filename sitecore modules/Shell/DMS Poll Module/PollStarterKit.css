@@ -1,0 +1,64 @@
+﻿.scPollOptionResults
+{
+	width: 280px;
+	padding: 0.5em 0.5em 0.5em 0
+}
+
+.scPollOptionItemResult 
+{
+	font-size: 0.8em;
+	padding: 0 0.3em 0.3em 0;
+	text-align: left;
+}
+
+.scPollOptionItemResultValue
+{
+	color: #346183;
+	font-weight: bold;
+}
+
+.scPollVisualisation 
+{
+	padding-top: 1px;
+	width: 100%;
+	margin-right: 2em;
+}
+
+.scPollPipe
+{
+	float: left;
+	background-image: url(/~/media/images/Poll/PollPipePart.ashx);
+	background-repeat: repeat-x;
+	width: 90%;
+}
+
+.scPollPipe IMG 
+{
+	margin-top: 1px;
+	height: 13px;
+}
+
+.scPollVisualisation IMG 
+{
+	margin-top: 1px;
+	height: 13px;
+}
+
+.scPollMain
+{
+	text-align:left;
+	padding: 1em;
+	width: 90%;
+	border-top: solid 1px #000000;
+	margin-top: 6em;
+}
+
+.scPollOptionIntro
+{
+	font-weight:bold;
+}
+
+.scButtons A
+{
+	color: Blue;
+}
